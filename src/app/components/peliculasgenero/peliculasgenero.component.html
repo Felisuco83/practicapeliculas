@@ -1,0 +1,13 @@
+<div *ngFor="let pelicula of peliculas">
+  <a [routerLink]="['/pelicula', pelicula.idPelicula]"
+    ><img src="{{ pelicula.foto }}"
+  /></a>
+  <p>
+    <b>{{ pelicula.titulo }}</b>
+  </p>
+  <p>{{ pelicula.argumento }}</p>
+  <a class="btn btn-danger" href="{{ pelicula.enlaceVideo }}">Youtube</a>
+  <br />
+  <hr />
+  <br />
+</div>

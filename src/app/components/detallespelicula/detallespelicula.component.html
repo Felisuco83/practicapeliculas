@@ -1,0 +1,8 @@
+<div id="container">
+  <h1 style="color: blue">Detalles de la película {{ pelicula.titulo }}</h1>
+  <h2>Actores: {{ pelicula.actores }}</h2>
+  <h2>Director: {{ pelicula.director }}</h2>
+  <a [routerLink]="['/genero', pelicula.idGenero]" class="btn btn-primary"
+    >Volver a género</a
+  >
+</div>
